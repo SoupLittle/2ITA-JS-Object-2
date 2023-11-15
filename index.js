@@ -301,7 +301,7 @@ var ansatt = [
 
 // Opg 1
 
-console.log("%cOppgave 1", bold)
+console.log("%cOppgave 1: Print alle navnene (både fornavn og etternavn)", bold)
 
 for (let i = 0; i < ansatt.length ; i++) {
     console.log(ansatt[i].navn())
@@ -309,7 +309,7 @@ for (let i = 0; i < ansatt.length ; i++) {
 
 // Opg 2
 
-console.log("%cOppgave 2", bold)
+console.log("%cOppgave 2: Endre Rasmuss sin alder", bold)
 
 ansatt.find(ansatt => ansatt.ansatt_id === 2 && (ansatt.alder = 30))
 
@@ -317,7 +317,7 @@ console.log(ansatt[1])
 
 // Opg 3
 
-console.log("%cOppgave 3", bold)
+console.log("%cOppgave 3: Legg til et tlf numer", bold)
 
 var markus = ansatt.find(ansatt => ansatt.forNavn === "Markus")
 
@@ -328,7 +328,7 @@ if (markus) {
 
 // Opg 4
 
-console.log("%cOppgave 4", bold)
+console.log("%cOppgave 4: Fjern Marius sin epost", bold)
 
 var marius = ansatt.find(ansatt => ansatt.forNavn === "Marius")
 
@@ -339,7 +339,7 @@ if (marius) {
 
 // Opg 5
 
-console.log("%cOppgave 5", bold)
+console.log("%cOppgave 5: Vis bilde av alle som er ansatt", bold)
 
 console.log("Click the 'Oppgave 5' button on page")
 
@@ -365,10 +365,9 @@ function alleImg() {
 
 // OPg 6
 
-console.log("%cOppgave 6", bold)
+console.log("%cOppgave 6: Vis bilde av Marius", bold)
 
 console.log("Click the 'Oppgave 6' button on page")
-
 
 function mariusImg() {
     document.getElementById('hiddenText').hidden = false
@@ -393,7 +392,7 @@ function mariusImg() {
 
 
 // Opg 7
-console.log("%cOppgave 7", bold)
+console.log("%cOppgave 7: Vis bilde av alle som jobber i Lier", bold)
 
 console.log("Click the 'Oppgave 7' button on page")
 
@@ -423,7 +422,7 @@ function lierImg(postSted) {
 
 // Opg 8
 
-console.log("%cOppgave 8", bold)
+console.log("%cOppgave 8: Vis bilde av alle som er Manager", bold)
 
 console.log("Click the 'Oppgave 8' button on page")
 
@@ -449,6 +448,4 @@ function managersImg() {
         window.location.reload();
     }, 9000);
 }
-
-
 
